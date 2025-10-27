@@ -190,6 +190,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        delete_key: delete_key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DELETE_KEY";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -277,10 +286,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none  &kp Q             &kp W           &kp E               &kp R        &kp T                           &kp Y          &kp U        &kp I                    &kp O                 &kp P                  &none
-&none  &mt LCTRL A       &kp S           &kp D               &kp F        &kp G                           &allow_left    &arrow_down  &arrow_up                &arrow_right          &mt RCTRL MINUS        &none
-&none  &mt LEFT_SHIFT Z  &mt LEFT_ALT X  &mt LEFT_COMMAND C  &kp V        &kp B        &kp K_MUTE  &none  &kp N          &kp M        &mt RIGHT_COMMAND COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT SLASH  &none
-&none  &kp LCTRL         &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 1 SPACE  &lt 2 SPACE                     &kp BACKSPACE  &lt 2 ENTER  &kp RIGHT_COMMAND        &kp RIGHT_ALT         &kp RCTRL              &none
+&none  &kp Q             &kp W           &kp E               &kp R        &kp T                           &kp Y        &kp U        &kp I                    &kp O                 &kp P                  &none
+&none  &mt LCTRL A       &kp S           &kp D               &kp F        &kp G                           &allow_left  &arrow_down  &arrow_up                &arrow_right          &mt RCTRL MINUS        &none
+&none  &mt LEFT_SHIFT Z  &mt LEFT_ALT X  &mt LEFT_COMMAND C  &kp V        &kp B        &kp K_MUTE  &none  &kp N        &kp M        &mt RIGHT_COMMAND COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT SLASH  &none
+&none  &kp LCTRL         &kp LEFT_ALT    &kp LEFT_COMMAND    &lt 1 SPACE  &lt 2 SPACE                     &delete_key  &lt 2 ENTER  &kp RIGHT_COMMAND        &kp RIGHT_ALT         &kp RCTRL              &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
