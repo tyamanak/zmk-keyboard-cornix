@@ -308,7 +308,7 @@
             bindings = <
 &trans  &kp ESC  &kp LA(TAB)        &kp F11  &kp LC(UP)  &none                   &kp PIPE   &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL              &trans
 &trans  &kp TAB  &kp LC(LS(EQUAL))  &none    &none       &none                   &kp TILDE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON          &trans
-&trans  &trans   &trans             &trans   &trans      &trans  &trans  &trans  &kp GRAVE  &kp SQT            &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt RIGHT_SHIFT COLON  &trans
+&trans  &trans   &trans             &trans   &trans      &trans  &trans  &trans  &kp GRAVE  &kp SQT            &kp LESS_THAN         &kp GREATER_THAN       &mt RIGHT_SHIFT COLON  &trans
 &trans  &trans   &trans             &trans   &trans      &trans                  &trans     &trans             &trans                &trans                 &trans                 &trans
             >;
 
