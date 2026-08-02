@@ -347,10 +347,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &kp LC(LS(F1))   &none            &none   &none   &none                        &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0  &trans
-&trans  &kp LC(LS(F12))  &kp LS(LC(F13))  &none   &none   &none                        &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1  &trans
-&trans  &trans           &trans           &trans  &trans  &trans  &screenshot  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2  &trans
-&trans  &trans           &trans           &trans  &trans  &trans                       &trans  &trans   &trans   &trans   &trans        &trans
+&trans  &kp LC(LS(F1))   &none            &none   &none   &none                            &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0  &trans
+&trans  &kp LC(LS(F12))  &kp LS(LC(F13))  &none   &none   &none                            &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1  &trans
+&trans  &trans           &trans           &trans  &trans  &trans  &screenshot  &bt BT_CLR  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2  &trans
+&trans  &trans           &trans           &trans  &trans  &trans                           &trans  &trans   &trans   &trans   &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
